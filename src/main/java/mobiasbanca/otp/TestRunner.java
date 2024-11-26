@@ -2,6 +2,7 @@ package mobiasbanca.otp;
 
 import mobiasbanca.otp.managers.DriverManager;
 import mobiasbanca.otp.managers.RandomDataManager;
+import mobiasbanca.otp.managers.ScrollManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,7 +47,11 @@ public class TestRunner {
         passwordInput.sendKeys(passwordData);
 
         WebElement privacyToggleBar = driver.findElement(By.name("agree"));
+        ScrollManager.scrollToElement(privacyToggleBar);
+
+
         privacyToggleBar.click();
+
 
         WebElement continueButton = driver.findElement(By.cssSelector("button[type='submit']"));
         continueButton.click();
