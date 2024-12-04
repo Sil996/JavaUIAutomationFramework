@@ -19,10 +19,27 @@
         <selenium-edge-driver.version>4.25.0</selenium-edge-driver.version>
         <selenium-safari-driver.version>4.25.0</selenium-safari-driver.version>
         <javafaker.version>1.0.2</javafaker.version>
+        <junit.version>5.11.0</junit.version>
 
     </properties>
 
     <dependencies>
+
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
